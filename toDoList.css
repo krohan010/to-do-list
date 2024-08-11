@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: rgb(187, 138, 33);
+    color: black;
+}
+
+.todo{
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    /* background-color: cadetblue; */
+    background-color: rgb(73, 72, 72);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding-bottom: 2%;
+}
+.header{
+    /* border: 1px groove green; */
+    height: 10%;
+    display: flex;
+}
+.header img{
+    width: 55px;
+    height: 100%;
+    border-radius: 5px;
+    margin: 5px 0px 0px 10px;
+}
+.header h2{
+    margin: auto;
+    font-family: "Great Vibes", cursive;
+}
+
+.input-container{
+    width: 80%;
+    border: 1px solid orange;
+    margin:  30px auto;
+    border-radius: 10px;
+    display: flex;
+    padding: 0px 5px;
+    height: 42px;
+}
+.input-container input, #add-btn{
+    width: 100%;
+    padding: 5px;
+    font-size: large;
+    color: green;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.input-container #add-btn{
+    width: 10%;
+    color: green;
+    font-size: 25px;
+    overflow-y: hidden;
+    margin-right: -6px;
+    border-radius: 10px;
+    padding: auto;
+    transition: all ease 1s;
+    background-color: rgb(243, 234, 220);
+}
+/* .input-container button:hover{
+    background-color: rgb(143, 140, 118);
+    overflow: hidden;
+    transform: scale(1.2);
+} */
+
+.output-container > div{
+    width: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin: 15px auto;
+    border-radius: 10px;
+    align-items: center;
+    height: 7%;
+    border-bottom: 2px groove white;
+}
+.output-container input[type="checkbox"]{
+    /* width: 100%; */
+    transform: scale(1.9);
+    margin-left: 10px;
+    accent-color: orange;
+}
+.output-container span{
+    /* border: 1px solid green; */
+    height: 100%;
+    padding: 0px 50px;
+    width: 87%;
+    text-align: center;
+    font-size: larger;
+}
+.output-container  button{
+    display: inline;
+    width: 40px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bolder;
+    color: red;
+}
+/* Task done */
+input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+    color: lightgreen;
+}
